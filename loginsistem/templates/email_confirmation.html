@@ -1,0 +1,6 @@
+{% autoescape off %}
+Welcome to website login
+Hello {{ user.first_name }}!
+Please confirm your email by clicking on the following link.
+Conformation link: htto://{{ domain }{% url 'activate' uid64=uid64 token=token %}}
+{% endautoescape %}
